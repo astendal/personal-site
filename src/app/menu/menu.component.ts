@@ -12,10 +12,12 @@ export class MenuComponent implements OnInit {
     {
       title: 'Home',
       url: '/',
+      icon: 'home-outline',
     },
     {
       title: 'About Us',
       url: '/about-us',
+      icon: 'people-outline',
     },
   ];
 

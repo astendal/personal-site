@@ -1,7 +1,13 @@
 <nb-layout>
-  <nb-layout-header fixed>{{ title }}</nb-layout-header>
+  <nb-layout-header fixed>
+    <h3>
+      <a style="text-decoration: none" href="/">
+        {{ title }}
+      </a>
+    </h3>
+  </nb-layout-header>
 
-  <nb-sidebar>
+  <nb-sidebar responsive right>
     <app-menu></app-menu>
   </nb-sidebar>
 

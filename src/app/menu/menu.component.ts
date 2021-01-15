@@ -1,0 +1,27 @@
+import { Component, OnInit } from '@angular/core';
+import { NbMenuItem } from '@nebular/theme';
+
+@Component({
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.scss'],
+})
+export class MenuComponent implements OnInit {
+
+  items: NbMenuItem[] = [
+    {
+      title: 'Home',
+      url: '/',
+    },
+    {
+      title: 'About Us',
+      url: '/about-us',
+    },
+  ];
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

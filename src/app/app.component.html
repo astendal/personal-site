@@ -1,14 +1,12 @@
 <nb-layout>
   <nb-layout-header fixed>{{ title }}</nb-layout-header>
 
-  <nb-sidebar>Sidebar Content</nb-sidebar>
+  <nb-sidebar>
+    <app-menu></app-menu>
+  </nb-sidebar>
 
   <nb-layout-column>
-    <app-about-us></app-about-us>
-  </nb-layout-column>
-
-  <nb-layout-column>
-    Column 2 Content
+    <router-outlet></router-outlet>
   </nb-layout-column>
 
   <nb-layout-footer></nb-layout-footer>

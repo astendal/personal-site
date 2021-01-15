@@ -3,13 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NbLayoutModule, NbSidebarModule, NbThemeModule } from '@nebular/theme';
+import { NbCardModule, NbLayoutModule, NbMenuModule, NbSidebarModule, NbTabsetModule, NbThemeModule } from '@nebular/theme';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    MenuComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +21,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
     NbThemeModule.forRoot(),
     NbLayoutModule,
     NbSidebarModule.forRoot(),
+    NbTabsetModule,
+    NbMenuModule.forRoot(),
+    NbCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
